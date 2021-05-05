@@ -1,0 +1,63 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class='heading'>
+      <h1>Demo App</h1>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class='content'>
+  <div class="example-container mat-elevation-z8">
+    <mat-table #table [dataSource]="dataSource" matSort>
+      <!-- First Column ID-->
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+      </ng-container>
+
+      <!-- Second Column -->
+      <ng-container matColumnDef="productName">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.productName}} </mat-cell>
+      </ng-container>
+
+      <!-- Third Column -->
+      <ng-container matColumnDef="productCode">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Code </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          <div class="form-group">
+            <a target="_blank" (click)="onNavigate(element.productCode)" href="#">{{element.productCode}}</a>
+          </div>
+        </mat-cell>
+      </ng-container>
+      <!-- Fourth Column -->
+      <ng-container matColumnDef="prodRating">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Rating </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.prodRating }} </mat-cell>
+      </ng-container>
+      <!-- Action Column -->
+      <ng-container matColumnDef="view">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> View </mat-header-cell>
+        <mat-cell *matCellDef="let element"> <button mat-icon-button  class="iconbutton"
+            (click)="openDialog(element,true)" color="primary">
+            <mat-icon>remove_red_eye</mat-icon>
+          </button> </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="edit">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Edit </mat-header-cell>
+        <mat-cell *matCellDef="let element"> <button mat-icon-button  class="iconbutton"
+            color="primary" (click)="openDialog(element,false)">
+            <mat-icon>edit</mat-icon>
+          </button> </mat-cell>
+      </ng-container>
+
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  </div>
+</div>

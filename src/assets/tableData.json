@@ -1,0 +1,271 @@
+[
+  {
+    "id": 1,
+    "productName": "Netgear Cable Modem",
+    "productCode": "CM700",
+    "proddescription": "Netgear Cable Modem compatible with all cables",
+    "prodRating": 4.0,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric",
+      "metricDesc": "Test Description",
+      "maxScore": 3,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+  {
+    "id": 2,
+    "productName": "Linksys Cable Modem",
+    "productCode": "LK700",
+    "proddescription": "Linksys Cable Modem compatible with all cables",
+    "prodRating": 4.1,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 2,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+  {
+    "id": 3,
+    "productName": "TP Link Cable Modem",
+    "productCode": "TPL700",
+    "proddescription": "TP Link Cable Modem compatible with all cables",
+    "prodRating": 4.2,
+    "metricInfo":{
+      "businessGroup": "bizGrp-1",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 2,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+  {
+    "id": 4,
+    "productName": "Netgear Cable Modem",
+    "productCode": "CM700",
+    "proddescription": "Netgear Cable Modem compatible with all cables",
+    "prodRating": 4.0,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 2,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+  {
+    "id": 5,
+    "productName": "Linksys Cable Modem",
+    "productCode": "LK700",
+    "proddescription": "Linksys Cable Modem compatible with all cables",
+    "prodRating": 4.1,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 6,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+  {
+    "id": 6,
+    "productName": "TP Link Cable Modem",
+    "productCode": "TPL700",
+    "proddescription": "TP Link Cable Modem compatible with all cables",
+    "prodRating": 4.2,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 5,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  }, {
+    "id": 7,
+    "productName": "Netgear Cable Modem",
+    "productCode": "CM700",
+    "proddescription": "Netgear Cable Modem compatible with all cables",
+    "prodRating": 4.0,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 5,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+  {
+    "id": 8,
+    "productName": "Linksys Cable Modem",
+    "productCode": "LK700",
+    "proddescription": "Linksys Cable Modem compatible with all cables",
+    "prodRating": 4.1,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 5,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+  {
+    "id": 9,
+    "productName": "TP Link Cable Modem",
+    "productCode": "TPL700",
+    "proddescription": "TP Link Cable Modem compatible with all cables",
+    "prodRating": 4.2,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 5,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+
+  {
+    "id": 10,
+    "productName": "Netgear Cable Modem",
+    "productCode": "CM700",
+    "proddescription": "Netgear Cable Modem compatible with all cables",
+    "prodRating": 4.0,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 5,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+  {
+    "id": 11,
+    "productName": "Linksys Cable Modem",
+    "productCode": "LK700",
+    "proddescription": "Linksys Cable Modem compatible with all cables",
+    "prodRating": 4.1,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 5,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+  {
+    "id": 12,
+    "productName": "TP Link Cable Modem",
+    "productCode": "TPL700",
+    "proddescription": "TP Link Cable Modem compatible with all cables",
+    "prodRating": 4.2,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 5,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+  {
+    "id": 13,
+    "productName": "Netgear Cable Modem",
+    "productCode": "CM700",
+    "proddescription": "Netgear Cable Modem compatible with all cables",
+    "prodRating": 4.0,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 5,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+  {
+    "id": 14,
+    "productName": "Linksys Cable Modem",
+    "productCode": "LK700",
+    "proddescription": "Linksys Cable Modem compatible with all cables",
+    "prodRating": 4.1,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 5,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+  {
+    "id": 15,
+    "productName": "TP Link Cable Modem",
+    "productCode": "TPL700",
+    "proddescription": "TP Link Cable Modem compatible with all cables",
+    "prodRating": 4.2,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 5,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  }, {
+    "id": 16,
+    "productName": "Netgear Cable Modem",
+    "productCode": "CM700",
+    "proddescription": "Netgear Cable Modem compatible with all cables",
+    "prodRating": 4.0,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 5,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+  {
+    "id": 17,
+    "productName": "Linksys Cable Modem",
+    "productCode": "LK700",
+    "proddescription": "Linksys Cable Modem compatible with all cables",
+    "prodRating": 4.1,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 5,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  },
+  {
+    "id": 18,
+    "productName": "TP Link Cable Modem",
+    "productCode": "TPL700",
+    "proddescription": "TP Link Cable Modem compatible with all cables",
+    "prodRating": 4.2,
+    "metricInfo":{
+      "businessGroup": "bizGrp-2",
+      "metricName": "Test Metric2",
+      "metricDesc": "Test Description",
+      "maxScore": 5,
+      "subMetric": false,
+      "subMetricScore":[]
+    }
+  }
+]

@@ -1,0 +1,30 @@
+<!-- Table Starts -->
+<table  class="width-100">
+  Scale
+  <!-- input text -->
+  <input type="text" class='scale-6' value='1 to {{maxScoreInp}}' size="4" disabled>
+  <tr *ngFor="let item of row; let i = index;trackBy:trackByIndex;">
+    <td class="width-80">
+      <mat-form-field class="text-width">
+        <input matInput type="text" [(ngModel)]="row[i].input">
+      </mat-form-field>
+    </td>
+    <!-- Drop down-->
+    <td class='drop-down' class="width-15">
+      <mat-form-field class="drpdwn-width">
+        <mat-select [(ngModel)]="row[i].count" name="count"
+         (selectionChange)='chngScaleDrpdwn($event)' >
+          <mat-option></mat-option>
+          <mat-option *ngFor="let counter of numbersDrpDwn|numFilter:row;trackBy:trackByIndex;" [value]="counter.value"
+          [disabled]='counter.disabled'>
+            {{counter.value}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </td>
+    <!-- Add remove button-->
+    <td class="width-5"> <span (click)="addRow(i)"><i class="fa fa-plus fa-5x blue"></i></span> </td>
+    <td class="width-5"> <span (click)="deleteRow(i)"><i class="fa fa-minus  fa-5x blue"></i></span></td>
+  </tr>
+</table>
+<!-- Table Ends -->

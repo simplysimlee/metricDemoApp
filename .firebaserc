@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "metric-demo": {
+      "hosting": {
+        "newDemo-app": [
+          "metric-demo"
+        ]
+      }
+    }
+  }
+}

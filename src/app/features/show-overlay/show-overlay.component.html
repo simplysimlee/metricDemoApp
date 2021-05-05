@@ -1,0 +1,78 @@
+<!-- Overlay Starts-->
+
+  <!-- Metric details Section starts -->
+  <form [formGroup]='metricForm'>
+    <div class="flex-container">
+      <!-- Business Group Drop Down -->
+      <mat-form-field>
+        <mat-label>Business Group*</mat-label>
+        <mat-select formControlName="businessGroup" name="bizGrp" cdkFocusInitial>
+          <mat-option *ngFor="let bizGrp of bizGrps" [value]="bizGrp.value">
+            {{ bizGrp.viewValue }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="!metricForm.controls['businessGroup'].valid && metricForm.controls['businessGroup'].touched">
+         {{requiredErr}}
+        </mat-error>
+      </mat-form-field>
+        <!--  Metric Name Input -->
+      <mat-form-field class=" ">
+        <mat-label>Metric Name*</mat-label>
+        <input matInput type="text" formControlName="metricName"  />
+        <button mat-button *ngIf="metricName" matSuffix mat-icon-button aria-label="Clear" (click)="metricName = ''">
+          <mat-icon>close</mat-icon>
+        </button>
+        <mat-error *ngIf="!metricForm.controls['metricName'].valid && metricForm.controls['metricName'].touched">
+          {{requiredErr}}
+         </mat-error>
+      </mat-form-field>
+        <!--  Metric Description Input -->
+      <mat-form-field class=" ">
+        <mat-label>Metric Description*</mat-label>
+        <input matInput type="text" formControlName="metricDesc"  />
+        <button mat-button *ngIf="metricDesc" matSuffix mat-icon-button aria-label="Clear" (click)="metricDesc = ''">
+          <mat-icon>close</mat-icon>
+        </button>
+        <mat-error *ngIf="!metricForm.controls['metricDesc'].valid && metricForm.controls['metricDesc'].touched">
+          {{requiredErr}}
+         </mat-error>
+      </mat-form-field>
+       <!--  Max Score Input -->
+      <mat-form-field class=" ">
+        <mat-label>Max Score*</mat-label>
+        <input matInput type="number" formControlName="maxScore" (blur)='maxScoreChange()' />
+        <button mat-button *ngIf="maxScore" matSuffix mat-icon-button aria-label="Clear" (click)="value = ''">
+          <mat-icon>close</mat-icon>
+        </button>
+        <mat-error *ngIf="!metricForm.controls['maxScore'].valid && metricForm.controls['maxScore'].touched">
+          {{requiredErr}}
+         </mat-error>
+      </mat-form-field>
+        <!--  Sub Metric Down -->
+      <mat-form-field>
+        <mat-label>Is it a Sub Metric*</mat-label>
+        <mat-select   formControlName="subMetric" name="isSubMetrc" >
+          <mat-option *ngFor="let isSubMetrc of isSubMetric" [value]="isSubMetrc.value">
+            {{ isSubMetrc.viewValue }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="!metricForm.controls['subMetric'].valid && metricForm.controls['subMetric'].touched">
+          {{requiredErr}}
+         </mat-error>
+      </mat-form-field>
+    </div>
+    <!-- Metric details Section ends-->
+    <!-- Score Section Starts-->
+    <app-metric-score *ngIf= "!data.readonly && metricForm.controls['subMetric'].value" [maxScoreInp]="metricForm.controls['maxScore'].value" ></app-metric-score>
+    <!-- Score Section ends-->
+
+    <mat-dialog-actions align="end">
+      <!-- Cancel, Save Buttons -->
+      <button  mat-raised-button mat-dialog-close color="basic"> {{data.readonly? 'Close' : 'Cancel'}}</button>
+      <button *ngIf="!data.readonly" mat-raised-button [mat-dialog-close]="true" cdkFocusInitial color="primary">
+        Save
+      </button>
+    </mat-dialog-actions>
+  </form>
+  <!-- Overlay Ends-->
+
