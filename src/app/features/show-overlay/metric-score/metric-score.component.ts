@@ -84,7 +84,9 @@ export class MetricScoreComponent implements OnInit {
    * @param x:index of row
    */
   deleteRow(x) {
-    this.row.splice(x, 1);
+    if(this.row.length > 0){
+      this.row.splice(x, 1);
+    }
   }
 
   /**
