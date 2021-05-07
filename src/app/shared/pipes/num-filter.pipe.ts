@@ -1,13 +1,13 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { NumDropdown } from '@core/interface/num-dropdown';
-import { Row } from '@core/interface/row';
+import { GuideLines } from '@core/interface/guide-lines';
 
 @Pipe({
   name: 'numFilter'
 })
 export class NumFilterPipe implements PipeTransform {
 
-  transform(value: NumDropdown[], args: Row[]): any {
+  transform(value: NumDropdown[], args: GuideLines[]): any {
 
     /**
      * Created a rowCountArr array
